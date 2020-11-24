@@ -77,8 +77,14 @@ module.exports = {
                 overrideOS: false,
             },
         },
+        // {
+        //     resolve: `gatsby-theme-ghost-members`,
+        // },
         {
-            resolve: `gatsby-theme-ghost-members`,
+            resolve: `gatsby-theme-ghost-toc`,
+        },
+        {
+            resolve: `gatsby-code-titles-dracula`,
         },
         {
             resolve: `gatsby-transformer-rehype`,
@@ -94,9 +100,14 @@ module.exports = {
                     {
                         resolve: `gatsby-rehype-prismjs`,
                     },
+                    {
+                        resolve: `gatsby-rehype-inline-images`,
+                    },
                 ],
             },
         },
+
+
         // this (optional) plugin enables Progressive Web App + Offline functionality
         // This plugin is currently causing issues: https://github.com/gatsbyjs/gatsby/issues/25360
         //`gatsby-plugin-offline`,
